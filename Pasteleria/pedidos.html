@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilospedidos.css">
+    <link rel="icon" href="./imagenes/logo.ico">
+    <title>Pedidos</title>
+</head>
+<body style="background-color: #DDA0DD;">
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./imagenes/logo.png" alt="logo de la pasteleria">
+            <h2 class="nombre">Pastelería Dulce Sensación</h2>
+        </a>
+        <nav>
+            <a href="./index.html" class="nav link">Inicio</a>
+            <a href="./pedidos.html" class="nav link">Pedidos</a>
+            <a href="#contacto" class="nav link">Contacto</a>
+        </nav>
+    </header>
+    <div class="entrada">
+        <h2>Ingrese sus datos de envio</h2>
+        <label for="Input1">Ingrese su Nombre</label>
+        <input type="text" id="Input1" name="Input1"><br><br>
+        <label for="tel1">Ingrese su número teléfonico</label>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+        <label for="Input2">Ingrese su dirección</label>
+        <input type="text" id="Input2" name="Input2"><br><br>
+        <label for="fecha">Elija la fecha y hora de la entrega de su pastel</label>
+        <input type="datetime-local" id="fecha" name="fecha"><br><br>
+    </div>
+    <hr>
+    <div class="entrada">
+        <h2>Pedido</h2>
+        <h3>Pasteles</h3>
+        <input type="checkbox" id="tipoPastel1" name="tipoPastel1" value="Chocolate">
+        <label for="tipoPastel1">Pastel de Chocolate</label><br>
+        <input type="checkbox" id="tipoPastel2" name="tipoPastel2" value="tresLeches">
+        <label for="tipoPastel2">Pastel de Tres Leches</label><br>
+        <input type="checkbox" id="tipoPastel3" name="tipoPastel3" value="Moka">
+        <label for="tipoPastel3">Pastel de Moka</label><br>
+        <input type="checkbox" id="tipoPastel4" name="tipoPastel4" value="Zanahoria">
+        <label for="tipoPastel4">Pastel de Zanahoria</label><br>
+        <input type="checkbox" id="tipoPastel5" name="tipoPastel5" value="redVelvet">
+        <label for="tipoPastel5">Pastel Red Velvet</label><br>
+        <input type="checkbox" id="tipoPastel6" name="tipoPastel6" value="fresassinAzucar">
+        <label for="tipoPastel6">Pastel de Fresas sin Azúzcar</label><br>
+    </div>
+    <hr>
+    <div class="entrada">
+        <p>Tambíen puede hacer combinación de sabores por un costo extra de $100</p>
+        <label for="sabor1">Chocolate con:</label><br>
+        <input list="sabor1">
+        <datalist id="sabor1">
+            <option value="Tres Leches">
+            <option value="Moka">
+            <option value="Zanahoria">
+            <option value="Red Velvet">
+            <option value="Fresas">
+        </datalist>
+        <br><br>
+        <label for="sabor2">Tres Leches con:</label><br>
+        <input list="sabor2">
+        <datalist id="sabor2">
+            <option value="Moka">
+            <option value="Zanahoria">
+            <option value="Red Velvet">
+            <option value="Fresas">
+        </datalist>
+        <br><br>
+        <label for="sabor3">Moka con:</label><br>
+        <input list="sabor3">
+        <datalist id="sabor3">
+            <option value="Zanahoria">
+            <option value="Red Velvet">
+            <option value="Fresas">
+        </datalist>
+        <br><br>
+        <label for="sabor4">Zanahoria con:</label><br>
+        <input list="sabor4">
+        <datalist id="sabor4">
+            <option value="Red Velvet">
+            <option value="Fresas">
+        </datalist>
+        <br><br>
+        <label for="sabor5">Red Velvet con:</label><br>
+        <input list="sabor5">
+        <datalist id="sabor5">
+            <option value="Fresas">
+        </datalist>
+        <br><br>
+    </div>
+    <hr>
+    <div class="entrada">
+        <h3>Decoraciones</h3>
+        <input type="checkbox" id="deco1" name="deco1" value="happyBirthday">
+        <label for="deco1">Decoración Happy Birthday</label>
+        <h4>Elija el color</h4>
+        <input type="color" id="color1" name="color1"><br><br>
+        <input type="checkbox" id="deco2" name="deco2" value="loveYou">
+        <label for="deco2">Decoración Love You</label>
+        <h4>Elija el color</h4>
+        <input type="color" id="color1" name="color1"><br><br>
+        <input type="checkbox" id="deco3" name="deco3" value="duyas">
+        <label for="deco3">Duyas para decorar pasteles</label><br>
+        <br>
+        <!--<input type="submit" value="Enviar"> -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+        <!-- <input type="reset"> -->
+    </div>
+
+    <hr>
+    <footer>
+        <div class="contenedor">
+            <h2 id="contacto" class="titulo">Contacto</h2>
+            <h3 class="ti">AV MIGUEL ALEMAN NO. 220, CENTRO, 91700 <br>
+                Telefono: 5522449835 <br>
+                Horarios de atención: Lunes a Sabado de 9 am a 6 pm
+            </h3>
+        </div>
+        <div class="nosotros">
+            <h2 class="titulo">Sobre Nosotros</h2>
+            <h3 class="ti">
+                Somos una empresa dedicada a elevar la experiencia de 
+                nuestros clientes y consentirlos de una manera muy dulce.
+            </h3>
+        </div>
+        <div class="contenedor">
+            <p class="copy">© 2022 Pasteleria Dulce Sensación / Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <hr>    
+</body>
+</html>
